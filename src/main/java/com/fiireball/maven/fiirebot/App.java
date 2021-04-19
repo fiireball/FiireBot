@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Hello world!
  *
@@ -11,7 +14,7 @@ import java.util.Scanner;
 public class App 
 {
 	protected static String privateKey;
-	
+	private static final Logger logger = LoggerFactory.getLogger(FiireBot.class);
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -20,11 +23,11 @@ public class App
 			privateKey = reader.nextLine();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			System.out.println("[ERROR] privateKey could not be read.");
+			logger.error("privateKey ({}) could not be read.", privateKey);
 			e.printStackTrace();
 		}
         if (!privateKey.isEmpty()) {
-        	Bot.create(privateKey);
+        	FiireBot.create(privateKey);
         }
         
     }

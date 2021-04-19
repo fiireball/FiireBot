@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.fiireball</groupId>
-  <artifactId>com.fiireball.maven.fiirebot</artifactId>
+  <artifactId>fiirebot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>com.fiireball.maven.fiirebot</name>
+  <name>fiirebot</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,6 +19,7 @@
   </properties>
 
   <dependencies>
+  	<!-- JUNIT -->
 	 <dependency>
 	   <groupId>org.junit.jupiter</groupId>
 	   <artifactId>junit-jupiter-api</artifactId>
@@ -31,11 +32,13 @@
 	   <version>5.7.0</version>
 	   <scope>test</scope>
 	 </dependency>
+	 <!-- DISCORD4J -->
 	 <dependency>
 	   <groupId>com.discord4j</groupId>
 	   <artifactId>discord4j-core</artifactId>
 	   <version>3.1.5</version>
 	 </dependency>
+	 <!-- LOGBACK -->
 	 <dependency>
 	    <groupId>ch.qos.logback</groupId>
 	    <artifactId>logback-core</artifactId>
@@ -46,6 +49,7 @@
 	    <artifactId>logback-classic</artifactId>
 	    <version>1.2.3</version>
  	 </dependency>
+ 	 <!-- SLF4J -->
  	 <dependency>
 	    <groupId>org.slf4j</groupId>
 	    <artifactId>slf4j-api</artifactId>
