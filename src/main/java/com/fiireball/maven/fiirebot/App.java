@@ -24,7 +24,7 @@ public class App
 			e.printStackTrace();
 		}
         if (!privateKey.isEmpty()) {
-        	System.out.println(privateKey);
+        	Bot.create(privateKey);
         }
         
     }
